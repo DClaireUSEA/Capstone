@@ -1,0 +1,47 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+}
+
+.mobile {
+  visibility: hidden;
+}
+
+header {
+  display:inline-flex;
+  height: 62px;
+  align-items: center;
+  margin: 0px 24px 0px 24px;
+
+}
+
+.title {
+  height: 32px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+
+}
+
+header li {
+  display:inline-block;
+  list-style:none;
+
+}
+
+header a {
+  text-decoration: none;
+  color:inherit;
+}
+
+header nav {
+  display:inline-block;
+
+}
+
+.academy {
+  font-weight: normal;
+  opacity: 0.5;
+}
