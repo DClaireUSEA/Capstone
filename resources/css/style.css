@@ -1,18 +1,28 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 13px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.maintitle h1 {
+  font-size: 2.5rem;
 }
 
 .mobile {
+  position: fixed;
   visibility: hidden;
 }
 
 header {
-  display:inline-flex;
+  display:flex;
   height: 62px;
   align-items: center;
-  margin: 0px 24px 0px 24px;
+  margin: 0px 16px 0px 24px;
 
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .title {
@@ -20,14 +30,18 @@ header {
 }
 
 .logo {
+  font-family: 'Ubuntu', sans-serif;
   display: inline-flex;
   align-items: center;
+  margin-right: auto;
 
 }
 
 header li {
   display:inline-block;
   list-style:none;
+  justify-content:space-between;
+  padding: 0px 8px 0px 8px;
 
 }
 
@@ -36,12 +50,200 @@ header a {
   color:inherit;
 }
 
-header nav {
+header ul {
   display:inline-block;
+  justify-content: flex-end;
+  align-items: center;
 
 }
 
 .academy {
   font-weight: normal;
   opacity: 0.5;
+}
+
+.main {
+  display: flex;
+  background-color: #d8d8d8;
+
+}
+
+.main img {
+  margin: 32px 24px 32px 24px;
+  width: 60%;
+  height: 100%;
+}
+
+.maintitle {
+  display: block;
+  padding-top: 125px;
+}
+
+.startbutton {
+  background-color: #4a4a4a;
+  display: block;
+  width: 90%;
+}
+
+.startbutton p  {
+  padding: 8px 0px 8px 0px;
+  color: white;
+  text-align: center;
+
+}
+
+.contentone {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.contentoneleft {
+  display: block;
+  width: 60%;
+  margin: 32px 24px 32px 24px;
+
+}
+
+.contentoneleft img {
+  width: 100%;
+
+}
+
+
+.contentoneright {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  border-left: 1px solid grey;
+  padding-top: 16px;
+
+}
+
+.blockone img {
+  width: 35%;
+  height: 100%;
+}
+
+.blockonetext {
+  width: 65%;
+  padding: 0px 24px 0px 24px;
+}
+
+.blockone {
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid grey;
+
+}
+
+.blockone:hover {
+  background-color: #d8d8d8;
+}
+
+.blockone a {
+    text-decoration: none;
+}
+
+
+.contenttwo {
+  background-color: #d8d8d8;
+  padding: 0px 56px 16px 56px;
+}
+
+.sectiontitle {
+  text-align: center;
+  font-size: 2rem;
+  padding: 32px 0px 16px 0px;
+}
+
+.blocktwo img {
+  width:100%;
+  height:auto;
+}
+
+.blocktwo {
+  display: inline-block;
+  padding: 16px;
+  max-width: 30%;
+}
+
+
+.blocktwobox {
+  display:block;
+  background-color: white;
+  padding-bottom: 8px;
+
+}
+
+.blocktwotext {
+    padding: 0px 16px 16px 16px;
+}
+
+.contentthreesection {
+  display: flex;
+}
+.contentthreeleft {
+  display: block;
+  width: 60%;
+  margin: 32px 24px 32px 24px;
+}
+
+.contentthree video {
+  width:100%;
+}
+
+.contentthreeright {
+  display: block;
+  flex-wrap: wrap;
+  width: 40%;
+  padding-top: 16px;
+}
+
+.blockthree {
+  display: flex;
+  padding: 16px;
+}
+
+.blockthree:hover {
+  background-color: #d8d8d8;
+}
+
+.blockthree img {
+  width: 35%;
+  height: 100%;
+}
+
+.blockthreetext {
+  width: 65%;
+  padding: 0px 24px 0px 24px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  display: flex;
+}
+
+footer p {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+}
+footer li {
+  display:inline-block;
+  list-style:none;
+  justify-content:space-between;
+  padding: 0px 8px 0px 8px;
+
+}
+
+footer a {
+  text-decoration: none;
+  color:inherit;
+}
+
+footer ul {
+  display:inline-block;
+  justify-content: flex-end;
+  align-items: center;
+
 }
