@@ -4,21 +4,24 @@ body {
   color: #4a4a4a;
 }
 
-.maintitle h1 {
-  font-size: 2.5rem;
-}
+
 
 .mobile {
   position: fixed;
   visibility: hidden;
 }
 
+/* Header */
 header {
   display:flex;
   height: 62px;
   align-items: center;
   margin: 0px 16px 0px 24px;
 
+}
+
+.maintitle h1 {
+  font-size: 2.5rem;
 }
 
 .uppercase {
@@ -36,6 +39,12 @@ header {
   margin-right: auto;
 
 }
+ .mobilelogo {
+   font-family: 'Ubuntu', sans-serif;
+   display: inline-flex;
+   align-items: center;
+   margin-right: auto;
+ }
 
 header li {
   display:inline-block;
@@ -62,6 +71,7 @@ header ul {
   opacity: 0.5;
 }
 
+/* Main */
 .main {
   display: flex;
   background-color: #d8d8d8;
@@ -76,7 +86,7 @@ header ul {
 
 .maintitle {
   display: block;
-  padding-top: 125px;
+  padding-top: 10%;
 }
 
 .startbutton {
@@ -91,6 +101,8 @@ header ul {
   text-align: center;
 
 }
+
+/* Section One */
 
 .contentone {
   display: flex;
@@ -144,6 +156,7 @@ header ul {
     text-decoration: none;
 }
 
+/* Section Two */
 
 .contenttwo {
   background-color: #d8d8d8;
@@ -178,6 +191,9 @@ header ul {
 .blocktwotext {
     padding: 0px 16px 16px 16px;
 }
+
+
+/* Section Three */
 
 .contentthreesection {
   display: flex;
@@ -218,6 +234,8 @@ header ul {
   padding: 0px 24px 0px 24px;
 }
 
+/* Footer */
+
 footer {
   border-top: 1px solid grey;
   display: flex;
@@ -247,3 +265,111 @@ footer ul {
   align-items: center;
 
 }
+
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+  body {
+
+  }
+
+  .mobile {
+    visibility: visible;
+    position: relative;
+  }
+
+  header nav, .title, .contentoneleft, .desktop, .blocktwo img, .blocktwo p, .contentthreeright, .contentthreelefttext, footer ul { visibility: hidden;
+    position: fixed;
+  }
+
+  .logo {
+    text-align: justify;
+  }
+  .mobilelogo {
+  width: 100px;
+	display: inline-block;
+	vertical-align: top;
+
+	}
+
+  .main {
+    display: block;
+
+  }
+
+  .main img {
+    margin: 0px;
+    width:100%;
+  }
+
+  .maintitle {
+    margin: 0px 0px 0px 16px;
+    padding: 0px 0px 32px 0px;
+  }
+
+  .startbutton {
+    background-color: #9b9b9b;
+  }
+
+  .blockone {
+    display: block;
+
+  }
+  .contentoneright {
+    width: 100%;
+  }
+  .blockone img {
+    width: 100%;
+    height: auto;
+  }
+
+
+.contenttwo {
+  background-color: white;
+  padding: 0px;
+}
+
+.blocktwo {
+  display:flex;
+  padding: 16px;
+  max-width: 100%;
+}
+
+  .blocktwobox {
+    display: flex;
+    background-color: #d8d8d8;
+    padding: 16px;
+    margin: 0px;
+    flex-grow: 1;
+
+
+  }
+
+  .blocktwotext {
+    font-size: .7rem;
+    font-weight: lighter;
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+  .sectiontitle {
+    padding: 32px 0px 16px 0px;
+  }
+
+
+  .contentthreeleft {
+    width: 100%;
+    margin: 0px;
+  }
+
+
+
+footer p {
+  padding-top:24px;
+}
+
+
+
+  }
